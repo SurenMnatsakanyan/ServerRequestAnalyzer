@@ -8,8 +8,8 @@ import org.example.Stage5.client.Args;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicReference;
@@ -28,7 +28,7 @@ public class Main {
     }
     public static void main(String[] args) throws ExitException {
         System.out.println("Server started!");
-        Map<String, String> container = new HashMap<>(1000);
+        Map<String, String> container = new ConcurrentHashMap<>(1000);
         AtomicReference<ServerSocket> server = null;
         try {
             ExecutorService executorService = Executors.newFixedThreadPool(POOL_SIZE);
