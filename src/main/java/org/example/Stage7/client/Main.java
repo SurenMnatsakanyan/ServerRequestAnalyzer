@@ -1,4 +1,4 @@
-package org.example.Stage6.client;
+package org.example.Stage7.client;
 import com.beust.jcommander.JCommander;
 import com.google.gson.Gson;
 import java.io.*;
@@ -19,7 +19,7 @@ public class Main {
                 .parse(args);
 
         String encapsulatedValue = null;
-        String dataFilePath = "/Users/smnatsakanyan/Desktop/hard_project/src/main/java/org/example/Stage6/client/data";
+        String dataFilePath = "/Users/smnatsakanyan/Desktop/hard_project/src/main/java/org/example/Stage7/client/data/";
         if (arguments.getTextFileName() == null)
             encapsulatedValue = new Gson().toJson(arguments);
         else {
