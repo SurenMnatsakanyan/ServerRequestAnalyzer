@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Main {
-    private static final int serverPort = 8089;
+    private static final int serverPort = 9001;
     private static final int POOL_SIZE = 40;
 
     public static void main(String[] args) throws ExitException {
@@ -68,36 +68,36 @@ public class Main {
                 out = new DataOutputStream(new BufferedOutputStream(clientSocket.getOutputStream()));
                 String jsonData = in.readUTF();
                 JsonObject jsonObjectForJsonData = new Gson().fromJson(jsonData,JsonObject.class);
-                Args arguments = Args.typeDeterminer(jsonData,jsonObjectForJsonData);
-                BackRequest backRequest = new BackRequest();
+                Args arguments = new Gson().fromJson(jsonData, Args.class);;
                 Command command = null;
                 switch (arguments.getType()) {
                     case "exit" -> {
-                        backRequest.setResponse("OK");
-                        String toJson = new Gson().toJson(backRequest);
+                        BackResponse backResponse = new BackResponse();
+                        backResponse.setResponse("OK");
+                        String toJson = new Gson().toJson(backResponse);
                         out.writeUTF(toJson);
                         throw new ExitException("exit");
                     }
                     case "get" -> {
-                     command = new GetCommand(arguments,container,backRequest);
+                     command = new GetCommand(arguments,container);
                     }
 
                     case "set" -> {
-                        command = new SetCommand(arguments,container,backRequest,jsonObjectForJsonData);
+                        command = new SetCommand(arguments,container, jsonObjectForJsonData);
                     }
                     case "delete" -> {
-                     command = new DeleteCommand(arguments,container,backRequest);
+                     command = new DeleteCommand(arguments,container);
                     }
                     default -> throw new ExitException("Exit");
                 }
-                command.execute();
+              BackResponse backResponse =  command.execute();
                 Gson gson = new GsonBuilder()
-                        .registerTypeAdapter(BackRequest.class, new BackRequestSerializer())
+                        .registerTypeAdapter(BackResponse.class, new BackRequestSerializer())
                         .create();
-                String toJson = gson.toJson(backRequest);
+                String toJson = gson.toJson(backResponse);
                 out.writeUTF(toJson);
 
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             } finally {
                 try {

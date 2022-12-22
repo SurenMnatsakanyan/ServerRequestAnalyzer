@@ -9,12 +9,10 @@ import java.util.Map;
 public class GetCommand implements Command{
     private Args<?,?> arguments;
     private Map<String,String> container;
-    private BackRequest backRequest;
 
-    public GetCommand(Args arguments, Map<String, String> container, BackRequest backRequest) {
+    public GetCommand(Args arguments, Map<String, String> container) {
         this.arguments = arguments;
         this.container = container;
-        this.backRequest = backRequest;
     }
 
     private static boolean isValidJson(String json) {
@@ -27,8 +25,9 @@ public class GetCommand implements Command{
     }
 
     @Override
-    public void execute() {
+    public BackResponse execute() {
         String[] keys = null;
+        BackResponse backResponse = new BackResponse();
         if(arguments.getKey().getClass() != String.class) {
             keys = ((ArrayList<String>) arguments.getKey()).toArray(new String[0]);
         }
@@ -38,26 +37,27 @@ public class GetCommand implements Command{
         }
         String jsonObjectStringResult = container.get(keys[0]);
         if (container.containsKey(keys[0])) {
-            backRequest.setResponse("OK");
+            backResponse.setResponse("OK");
             if(keys.length == 1){
                 if(isValidJson(jsonObjectStringResult))
-                    backRequest.setValue(jsonObjectStringResult);
+                    backResponse.setValue(jsonObjectStringResult);
                 else
-                    backRequest.setValue((new Gson().fromJson(jsonObjectStringResult, JsonObject.class)).getAsString());
+                    backResponse.setValue(jsonObjectStringResult);
             }else{
                 JsonObject jsonObject =  new Gson().fromJson(jsonObjectStringResult, JsonObject.class);
                 for(int i=1; i<keys.length-1; i++){
                     jsonObject = (JsonObject) jsonObject.get(keys[i]);
                 }
                 if (isValidJson(jsonObject.get(keys[keys.length-1]).toString()))
-                    backRequest.setValue(jsonObject.get(keys[keys.length-1]).toString());
+                    backResponse.setValue(jsonObject.get(keys[keys.length-1]).toString());
                 else
-                    backRequest.setValue(jsonObject.get(keys[keys.length-1]).getAsString());
+                    backResponse.setValue(jsonObject.get(keys[keys.length-1]).getAsString());
             }
 
         } else {
-            backRequest.setResponse("ERROR");
-            backRequest.setValue("No such key");
+            backResponse.setResponse("ERROR");
+            backResponse.setValue("No such key");
         }
+        return backResponse;
     }
 }

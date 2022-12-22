@@ -5,10 +5,11 @@ import java.io.*;
 import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class Main {
     private static final String SERVER_ADDRESS = "127.0.0.1";
-    private static final int SERVER_PORT = 8089;
+    private static final int SERVER_PORT = 9001;
 
     public static void main(String[] args) {
         System.out.println("Client started!");
@@ -20,8 +21,13 @@ public class Main {
 
         String encapsulatedValue = null;
         String dataFilePath = "/Users/smnatsakanyan/Desktop/hard_project/src/main/java/org/example/Stage7/client/data/";
-        if (arguments.getTextFileName() == null)
+        if (arguments.getTextFileName() == null) {
+            if(arguments.getValue() != null && arguments.getValue().getClass().equals(ArrayList.class)){
+                ArrayList<String> arr = (ArrayList<String>) arguments.getValue();
+                arguments.setValue(arr.get(0));
+            }
             encapsulatedValue = new Gson().toJson(arguments);
+        }
         else {
             encapsulatedValue = arguments.getTextFileName();
           try {

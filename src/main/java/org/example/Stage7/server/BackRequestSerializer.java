@@ -4,7 +4,7 @@ import com.google.gson.*;
 
 import java.lang.reflect.Type;
 
-public class BackRequestSerializer implements JsonSerializer<BackRequest> {
+public class BackRequestSerializer implements JsonSerializer<BackResponse> {
     private static boolean isValidJson(String json) {
         try {
             new Gson().fromJson(json, JsonObject.class);
@@ -15,24 +15,24 @@ public class BackRequestSerializer implements JsonSerializer<BackRequest> {
     }
 
     @Override
-    public JsonElement serialize(BackRequest backRequest, Type typeOfSrc, JsonSerializationContext context) {
+    public JsonElement serialize(BackResponse backResponse, Type typeOfSrc, JsonSerializationContext context) {
         JsonObject backRequestObject = new JsonObject();
-        if(backRequest.getResponse().equals("ERROR")){
+        if(backResponse.getResponse().equals("ERROR")){
             backRequestObject.addProperty("response","ERROR");
             backRequestObject.addProperty("reason","No such key");
         }
         else{
-            if(backRequest.getValue() != null){
-                backRequestObject.addProperty("response",backRequest.getResponse());
-                if(isValidJson(backRequest.getValue())) {
-                    JsonObject jsonObject = new Gson().fromJson(backRequest.getValue(),JsonObject.class);
+            if(backResponse.getValue() != null){
+                backRequestObject.addProperty("response", backResponse.getResponse());
+                if(isValidJson(backResponse.getValue())) {
+                    JsonObject jsonObject = new Gson().fromJson(backResponse.getValue(),JsonObject.class);
                     backRequestObject.add("value", jsonObject);
                 }else {
-                    backRequestObject.addProperty("value",backRequest.getValue());
+                    backRequestObject.addProperty("value", backResponse.getValue());
                 }
             }
             else
-                backRequestObject.addProperty("response",backRequest.getResponse());
+                backRequestObject.addProperty("response", backResponse.getResponse());
             }
         return backRequestObject;
     }

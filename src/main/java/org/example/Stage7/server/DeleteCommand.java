@@ -9,17 +9,16 @@ import java.util.Map;
 public class DeleteCommand implements Command{
     private Args<?,?> arguments;
     private Map<String,String> container;
-    private BackRequest backRequest;
 
-    public DeleteCommand(Args<?, ?> arguments, Map<String, String> container, BackRequest backRequest) {
+    public DeleteCommand(Args<?, ?> arguments, Map<String, String> container) {
         this.arguments = arguments;
         this.container = container;
-        this.backRequest = backRequest;
     }
 
     @Override
-    public void execute() {
+    public BackResponse execute() {
         String[] keys = null;
+        BackResponse backResponse = new BackResponse();
         if(arguments.getKey().getClass() != String.class) {
             keys = ((ArrayList<String>) arguments.getKey()).toArray(new String[0]);
         }
@@ -40,11 +39,12 @@ public class DeleteCommand implements Command{
                 jsonObject.remove(keys[keys.length - 1]);
                 container.put(keys[0],initialJson.toString());
             }
-            backRequest.setResponse("OK");
+            backResponse.setResponse("OK");
         }
         else {
-            backRequest.setResponse("ERROR");
-            backRequest.setValue("No such key");
+            backResponse.setResponse("ERROR");
+            backResponse.setValue("No such key");
         }
+        return backResponse;
     }
 }

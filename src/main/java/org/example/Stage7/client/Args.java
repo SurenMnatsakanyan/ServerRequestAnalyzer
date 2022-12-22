@@ -28,34 +28,24 @@ public class Args<K,V> {
     public V getValue() {
         return value;
     }
-    public static Args typeDeterminer(String jsonData, JsonObject jsonObjectForJsonData){
-        Args arguments = null;
-        if(jsonObjectForJsonData.get("type").getAsString().equals("set")) {
-            if (jsonObjectForJsonData.get("key").isJsonArray()) {
-                if (jsonObjectForJsonData.get("value").isJsonObject())
-                    arguments = new Args<ArrayList<String>, JsonObject>();
-                else
-                    arguments = new Args<ArrayList<String>, String>();
-            } else {
-                if (jsonObjectForJsonData.get("value") != null) {
-                    if (jsonObjectForJsonData.get("value").isJsonObject()) {
-                        arguments = new Args<String, JsonObject>();
-                    }
-                } else
-                    arguments = new Args<String, String>();
-            }
-        } else if(jsonObjectForJsonData.get("type").getAsString().equals("get")){
-            if (jsonObjectForJsonData.get("key").isJsonArray()) {
-                arguments = new Args<ArrayList<String>,Object>();
-            }
-            else {
-                arguments = new Args<String,Object>();
-            }
-        }
-        arguments = new Gson().fromJson(jsonData, Args.class);
-        return arguments;
-    }
+
     public String getTextFileName() {
         return textFile;
+    }
+
+    public void setKey(K key) {
+        this.key = key;
+    }
+
+    public void setValue(V value) {
+        this.value = value;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setTextFile(String textFile) {
+        this.textFile = textFile;
     }
 }
