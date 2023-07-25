@@ -1,0 +1,9 @@
+{
+  "type": "set",
+  "key": [
+    "persona",
+    "rocket",
+    "launches"
+  ],
+  "value": "88"
+}

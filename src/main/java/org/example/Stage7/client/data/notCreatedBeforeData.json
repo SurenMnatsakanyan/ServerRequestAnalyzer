@@ -1,6 +1,0 @@
-{
-  "type":"set",
-  "key":["person1","inside1","inside2"],
-  "value":{"id1": 12, "id2": 14}
-}
-

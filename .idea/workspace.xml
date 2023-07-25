@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfa62c0a-4f86-4cfc-889f-455118f89659" name="Changes" comment="Stage 7.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/notCreatedBeforeData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/notCreatedBeforeGet.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/secondSetFile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DeleteCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GetCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetCommandTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/Args.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/Args.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/deleteFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/deleteFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/getFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/getFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/secondGetFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/secondGetFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/setFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/setFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/updateFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/client/data/updateFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/BackRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/BackResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/BackRequestSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/BackRequestSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/DeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/DeleteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/GetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/GetCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/SetCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Stage7/server/SetCommand.java" afterDir="false" />
-    </list>
+    <list default="true" id="cfa62c0a-4f86-4cfc-889f-455118f89659" name="Changes" comment="Final Stage, testing and made corrections on commands." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,20 +34,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/smnatsakanyan/Desktop/hard_project/src/main/java/org/Stage7/client/data",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/Stage7/client/data" />
@@ -79,14 +52,23 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example/Stage5/server" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example/Stage5/client" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.Stage7.server" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.Stage7.server" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.Stage5.client" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DeleteCommandTest.testingStringKeyAndJsonObjectValue">
+  <component name="RunManager" selected="JUnit.org.example.server in hard_project">
     <configuration name="Delete" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-t delete -k 1 " />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,7 +76,7 @@
     </configuration>
     <configuration name="DelteFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in deleteFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,18 +84,31 @@
     </configuration>
     <configuration name="Get" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-t get -k 1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Stage7.server.Main" />
-      <module name="hard_project" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.server.Main" />
+      <module name="Server-Client-Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Stage7.server.*" />
+          <option name="PATTERN" value="org.example.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.server.Main" />
+      <module name="Server-Client-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,7 +118,7 @@
     </configuration>
     <configuration name="UpdateSecondSetFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in updateFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,42 +126,15 @@
     </configuration>
     <configuration name="notCreatedGetFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in notCreatedBeforeGet.json" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="notCreatedSetFile" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
-      <option name="PROGRAM_PARAMETERS" value="-in notCreatedBeforeData.json" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Stage7.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.Stage7.server.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Stage7.server.Main" />
-      <module name="hard_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Stage7.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="other" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-t delete -k 1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,7 +142,7 @@
     </configuration>
     <configuration name="secondGetFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in secondGetFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,7 +150,7 @@
     </configuration>
     <configuration name="secondSetFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in secondSetFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,7 +158,7 @@
     </configuration>
     <configuration name="withFileSet" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in setFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,37 +166,55 @@
     </configuration>
     <configuration name="withGetFile" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Stage7.client.Main" />
-      <module name="hard_project" />
+      <module name="Server-Client-Application" />
       <option name="PROGRAM_PARAMETERS" value="-in getFile.json" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="DeleteCommandTest.testingStringKeyAndJsonObjectValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hard_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DeleteCommandTest" />
+      <module name="Server-Client-Application" />
+      <option name="PACKAGE_NAME" value="org.example.server" />
+      <option name="MAIN_CLASS_NAME" value="org.example.server.DeleteCommandTest" />
       <option name="METHOD_NAME" value="testingStringKeyAndJsonObjectValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hard_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SetCommandTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="SetCommandTest.testingForNonExistentArrayKeyAndJsonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server-Client-Application" />
+      <option name="PACKAGE_NAME" value="org.example.server" />
+      <option name="MAIN_CLASS_NAME" value="org.example.server.SetCommandTest" />
+      <option name="METHOD_NAME" value="testingForNonExistentArrayKeyAndJsonObject" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetCommandTest.testingForNonExistentArrayKeyAndJsonObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hard_project" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SetCommandTest" />
-      <option name="METHOD_NAME" value="testingForNonExistentArrayKeyAndJsonObject" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="org.example.server in hard_project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Server-Client-Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.server" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Server-Client-Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Server-Client-Application" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,19 +230,16 @@
       <item itemvalue="Application.other" />
       <item itemvalue="Application.Delete" />
       <item itemvalue="Application.notCreatedGetFile" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.notCreatedSetFile" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.DeleteCommandTest.testingStringKeyAndJsonObjectValue" />
       <item itemvalue="JUnit.SetCommandTest.testingForNonExistentArrayKeyAndJsonObject" />
-      <item itemvalue="JUnit.SetCommandTest" />
+      <item itemvalue="JUnit.org.example.server in hard_project" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.org.example.server in hard_project" />
         <item itemvalue="JUnit.DeleteCommandTest.testingStringKeyAndJsonObjectValue" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.SetCommandTest.testingForNonExistentArrayKeyAndJsonObject" />
-        <item itemvalue="JUnit.SetCommandTest" />
-        <item itemvalue="Application.notCreatedSetFile" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +258,16 @@
       <workItem from="1670420638093" duration="9923000" />
       <workItem from="1670507114782" duration="17038000" />
       <workItem from="1671525606160" duration="1242000" />
-      <workItem from="1671528800296" duration="30697000" />
+      <workItem from="1671528800296" duration="35554000" />
+      <workItem from="1671815387454" duration="3748000" />
+      <workItem from="1672301549478" duration="454000" />
+      <workItem from="1673475586374" duration="20000" />
+      <workItem from="1673543548185" duration="622000" />
+      <workItem from="1673601956407" duration="2622000" />
+      <workItem from="1680595328859" duration="1264000" />
+      <workItem from="1681479310334" duration="1246000" />
+      <workItem from="1690314761735" duration="549000" />
+      <workItem from="1690315433793" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="Added Server to the program, Stage 2 is complete.">
       <created>1669212340456</created>
@@ -319,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670500687239</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final Stage, testing and made corrections on commands.">
+      <created>1671722885735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671722885736</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Final Stage, testing and made corrections on commands.">
+      <created>1690316085939</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690316085940</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +353,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Server to the program, Stage 2 is complete." />
@@ -355,6 +362,16 @@
     <MESSAGE value="Completed Stage 5, Multithreading and added new reading technique-reading files." />
     <MESSAGE value="Final Stages." />
     <MESSAGE value="Stage 7." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stage 7." />
+    <MESSAGE value="Final Stage, testing and made corrections on commands." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Stage, testing and made corrections on commands." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/hard_project$org_example_Stage7_server_Main.ic" NAME="org.example.Stage7.server.Main Coverage Results" MODIFIED="1671817576796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.Stage7.server.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/hard_project$DeleteCommandTest_testingStringKeyAndJsonObjectValue.ic" NAME="DeleteCommandTest.testingStringKeyAndJsonObjectValue Coverage Results" MODIFIED="1671817484455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/hard_project$org_example_Stage7_server_in_hard_project.ic" NAME="org.example.Stage7.server in hard_project Coverage Results" MODIFIED="1673602069261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.Stage7.server.*</FILTER>
+    </SUITE>
   </component>
 </project>
